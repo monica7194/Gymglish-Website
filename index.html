@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <!--jumbotron section-->
+  <div class="container">
+    <div style="margin-top:20px;">
+        <div class="alert alert-success fade in" id="msg" style="display:none"> </div>
+    </div>
+        
+   
+      
+      <div class="jumbotron">
+          <h1 class="display-4">Gymglish Website!</h1>
+          <p class="lead">Suivez la Delavigne Corporation, une entreprise à San Francisco : accents variés, humour, un anglais actuel, business et international... Chaque jour une référence culturelle : extraits de films, de chansons, citations, etc</p>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Learn More</button>
+          </p>
+        </div>
+     </div>
+  <!--Blocks section -->
+  <div class="container">
+    <div class="row">
+      <div class="container">
+          <div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+                Block 1
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+                Block 2
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+                Block 3
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3 col-xs-12">
+                Block 4
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">My Modal</h4>
+          </div>
+          <div class="modal-body">
+            
+              <form id="myform" >
+                 
+                    <p>When You click on 'OK' button It should display a message with your name on top of page</p>
+                   
+                 
+                  <div id="my-div" class="form-group">
+                      <label for="firstName">First Name:</label>
+                      <input type="text" class="form-control" onkeyup="RemoveClass()" name="firstName" id="firstName" >
+                    </div>
+                  <div class="modal-footer pt-5">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary">Ok</button>
+                    </div>
+              </form>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
